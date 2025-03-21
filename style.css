@@ -74,62 +74,6 @@ body{
     color: red;
 }
 
- /* Responsive Navbar */
-        .nav1 {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px;
-            background-color: #fff;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .logo img {
-            height: 50px;
-        }
-
-        .nav2 {
-            display: flex;
-            gap: 20px;
-        }
-
-        .nav2 a {
-            text-decoration: none;
-            color: black;
-            font-weight: bold;
-            padding: 10px;
-        }
-
-        /* Hide menu on small screens */
-        .nav2 {
-            display: none;
-            flex-direction: column;
-            position: absolute;
-            top: 70px;
-            right: 20px;
-            background-color: white;
-            padding: 10px;
-            border-radius: 5px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .menu-toggle {
-            font-size: 28px;
-            cursor: pointer;
-            display: none;
-        }
-
-        /* Show menu in mobile */
-        @media (max-width: 768px) {
-            .menu-toggle {
-                display: block;
-            }
-
-            .nav2.show {
-                display: flex;
-            }
-        }
-
 .dog-image{
     height: 100vh;
     display:grid;
