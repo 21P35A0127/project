@@ -24,13 +24,13 @@
             <i class="bi bi-linkedin"></i>
         </div1>
     </div>
-    <header class="nav1">
+<!--     <header class="nav1">
         <id class="logo">
             <img src="./pet logo.jpg" alt="">
         </id>
-            
+             -->
             <!-- <nav class="nav"> -->
-            <input type="checkbox" id="checkbox">
+<!--             <input type="checkbox" id="checkbox">
         <div class="nav2">
             <a href="#">Home Page</a>
             <a href="#">About</a>
@@ -40,6 +40,25 @@
             <a href="#">Contact</a>
         </div>
         <label for="checkbox"><ion-icon name="menu" class="icon"></ion-icon></label>
+    </header> -->
+
+     <header class="nav1">
+        <div class="logo">
+            <img src="./pet logo.jpg" alt="Pet Logo">
+        </div>
+        
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <i class="bi bi-list"></i>
+        </div>
+
+        <div class="nav2">
+            <a href="#">Home Page</a>
+            <a href="#">About</a>
+            <a href="#">Blog</a>
+            <a href="#">Pages</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
     </header>
     <div class="dog-image">
         <h1>We Care<br> <span><b>Your Pets</b></span></h1>
@@ -232,6 +251,12 @@
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+                <script>
+        function toggleMenu() {
+            document.querySelector(".nav2").classList.toggle("show");
+        }
+    </script>
 </body>
 
 </html>
