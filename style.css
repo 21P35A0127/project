@@ -26,7 +26,7 @@ body{
 .nav2 {
     margin-left: 50%;
 }
-/* .nav1{
+.nav1{
     padding: 10px;
     position: sticky;
     display: flex;
@@ -36,7 +36,7 @@ body{
     top: 0px;
     transform: 2s;
     scroll-behavior: smooth;
-} */
+}
 .icon{
     color: black;
     width: 20px;
@@ -46,30 +46,30 @@ body{
     margin-top: 5%;
     display: none;
 }
-/* .nav1{
+.nav1{
     display: flex;
     justify-content: center;
     align-items: center;
-} */
+}
 .nav1 img{
     width: 120px;
     height: 100px;
 }
 
-/* #checkbox{
+#checkbox{
     display: none;
-} */
+}
 
-/* #logo{
+#logo{
     width: 60px;
     height: 50px;
-} */
-/* .nav2 a{  
+}
+.nav2 a{  
     padding: 10px;
     color: black; 
     text-decoration: none;
     position: sticky;
-} */
+}
 .nav2 a:hover{
     color: red;
 }
@@ -456,14 +456,14 @@ h3{
         display: flex;
         align-items: center;
     }
-/*     .nav2{
+    .nav2{
         display: none;
-    } */
-/*     .nav1{
+    }
+    .nav1{
         display: flex;
         justify-content: space-between;
-    } */
-/*     #checkbox:checked+nav{
+    }
+    #checkbox:checked+nav{
         display: flex;
         position: absolute;
         z-index: 1000;
@@ -476,7 +476,7 @@ h3{
         align-items: center;
         gap: 5px;
     }
-} */
+}
 @media screen and (width <= 650px) {
     .footer{
         display: grid;
