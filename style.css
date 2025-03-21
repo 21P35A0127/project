@@ -26,7 +26,7 @@ body{
 .nav2 {
     margin-left: 50%;
 }
-.nav1{
+/* .nav1{
     padding: 10px;
     position: sticky;
     display: flex;
@@ -36,7 +36,7 @@ body{
     top: 0px;
     transform: 2s;
     scroll-behavior: smooth;
-}
+} */
 .icon{
     color: black;
     width: 20px;
@@ -46,37 +46,90 @@ body{
     margin-top: 5%;
     display: none;
 }
-.nav1{
+/* .nav1{
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 .nav1 img{
     width: 120px;
     height: 100px;
 }
 
-#checkbox{
+/* #checkbox{
     display: none;
-}
-
-/* #checkbox+nav:checked{
-    display: block;
 } */
 
-#logo{
+/* #logo{
     width: 60px;
     height: 50px;
-}
-.nav2 a{  
+} */
+/* .nav2 a{  
     padding: 10px;
     color: black; 
     text-decoration: none;
     position: sticky;
-}
+} */
 .nav2 a:hover{
     color: red;
 }
+
+ /* Responsive Navbar */
+        .nav1 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            background-color: #fff;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo img {
+            height: 50px;
+        }
+
+        .nav2 {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav2 a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        /* Hide menu on small screens */
+        .nav2 {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 70px;
+            right: 20px;
+            background-color: white;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu-toggle {
+            font-size: 28px;
+            cursor: pointer;
+            display: none;
+        }
+
+        /* Show menu in mobile */
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+
+            .nav2.show {
+                display: flex;
+            }
+        }
+
 .dog-image{
     height: 100vh;
     display:grid;
@@ -403,14 +456,14 @@ h3{
         display: flex;
         align-items: center;
     }
-    .nav2{
+/*     .nav2{
         display: none;
-    }
-    .nav1{
+    } */
+/*     .nav1{
         display: flex;
         justify-content: space-between;
-    }
-    #checkbox:checked+nav{
+    } */
+/*     #checkbox:checked+nav{
         display: flex;
         position: absolute;
         z-index: 1000;
@@ -423,7 +476,7 @@ h3{
         align-items: center;
         gap: 5px;
     }
-}
+} */
 @media screen and (width <= 650px) {
     .footer{
         display: grid;
@@ -432,5 +485,6 @@ h3{
     }
     .copy{
         text-align: center;
+        padding: 10px 0;
     }
 }
